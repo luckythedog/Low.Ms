@@ -1,0 +1,48 @@
+<Clouds>
+	<CoreCloud>
+		<Cloud UniqueID="MyCoreCloud">
+			<Address IP="127.0.0.1" Port="6666"/>
+			<AllowedTotalConnections>2000000<AllowedTotalConnections/>
+		</Cloud>
+	</CoreCloud>
+
+	<SupportClouds>
+		<Cloud UniqueID="MySupportCloud1">
+			<Address IP="127.0.0.1" Port="6665"/>
+			<AllowedConnections>50000<AllowedConnections/>
+		</Cloud>
+
+		<Cloud UniqueID="MySupportCloud2">
+			<Address IP="127.0.0.1" Port="6664"/>
+			<AllowedConnections>25000<AllowedConnections/>
+		</Cloud>
+	</SupportClouds>
+
+	<Settings>
+		<AllowCloudAddOn>1</AllowCloudAddOn>
+	</Settings>
+</Clouds>
+
+<DataClouds>
+	<Cloud UniqueID="MyDataCloud With DB 1 To 3" Local="/databases/database1to3.nosql">
+		<Address IP="127.0.0.1" Port="6665"/>
+		<DataRange Start="1" End="3"/>
+	</Cloud>
+	<Cloud UniqueID="MyDataCloud #2 With DB 4 To 6" Local="/databases/database4to6.nosql">
+		<Address IP="127.0.0.1" Port="6665"/>
+		<DataRange Start="4" End="6"/>
+	</Cloud>
+	<Cloud UniqueID="MyDataCloud #3 With DB 7 To 9" Local="/databases/database7to9.nosql">
+		<Address IP="127.0.0.1" Port="6665"/>
+		<DataRange Start="7" End="9"/>
+	</Cloud>
+	<Cloud UniqueID="MyDataCloud #4 With DB 0" Local="/databases/database0to0.nosql">
+		<Address IP="127.0.0.1" Port="6665"/>
+		<DataRange Start="0" End="0"/>
+	</Cloud>
+	<Settings>
+		<CreateIfDatabaseDoesNotExist>1</CreateIfDatabaseDoesNotExist>
+		<DatabaseCredentials Username="root" Password="wierdo"/>
+		<Backup>5000</Backup>
+	</Settings>
+</DataClouds>

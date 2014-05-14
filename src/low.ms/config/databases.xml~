@@ -1,0 +1,28 @@
+<Databases>
+	<Range>
+		<Key ID="AllKey" Start="0" End="9"/>
+		<Key ID="LimitedKey" Start="1" End="3"/>
+	</Range>
+	<Database UniqueID="MyDatabase1">
+		<DataCloud
+		<Location>"/database/mydb.nosql"</Location>
+		<Username>"root"</Username>
+		<Password>"wierdo"</Password>
+		<Table>"players"</Table>
+		<RangeKey>"AllKey"</RangedKey>
+	</Database>
+	<Database UniqueID="MyDatabase2">
+		<Location>"/database/mydb3.nosql"</Location>
+		<Username>"root"</Username>
+		<Password>"wierdo"</Password>
+		<Table>"players"</Table>
+		<RangeKey>"AllKey"</RangedKey>
+	</Database>
+	<Database UniqueID="MyDatabase3">
+		<Location>"/database/mydb4.nosql"</Location>
+		<Username>"root"</Username>
+		<Password>"wierdo"</Password>
+		<Table>"players"</Table>
+		<RangeKey>"AllKey"</RangedKey>
+	</Database>
+</Databases>

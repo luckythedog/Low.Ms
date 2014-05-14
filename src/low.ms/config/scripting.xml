@@ -1,0 +1,7 @@
+<Scripting Directory="/scripts/">
+	<Event Type="Connect" Script="connect.rb"/>
+	<Event Type="Message Received" Script="message_received.rb"/>
+	<Event Type="Disconnect" Script="disconnect.rb"/>
+	<Event Type="Custom Event" Script="custom_event.rb"/>
+</Scripting>
+

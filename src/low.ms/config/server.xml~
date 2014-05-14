@@ -1,0 +1,22 @@
+<Clouds>
+<CoreCloud UniqueID="My Core Cloud One and Only">
+	<Address IP="127.0.0.1" Port="6665"/>
+	<Limit Connections="0" Backlog="0"/>
+</CoreCloud>
+<SupportCloud UniqueID="My Support Cloud #1">
+	<Address IP="127.0.0.1" Port="6664"/>
+	<Limit Connections="50000" Backlog="0"/>
+</SupportCloud>
+
+<SupportCloud UniqueID="My Support Cloud #2">
+	<Address IP="127.0.0.1" Port="6663"/>
+	<Limit Connections="40000" Backlog="0"/>
+</SupportCloud>
+</Clouds>
+
+
+<CloudsSettings>
+	<AllowCloudAddOn>1</AllowCloudAddOn>
+	<
+</CloudSettings>
+
